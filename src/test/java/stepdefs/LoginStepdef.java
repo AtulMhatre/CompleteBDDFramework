@@ -20,7 +20,7 @@ public class LoginStepdef {
     @Given("User enter valid Username and Password")
     public void user_enter_valid_username_and_password() {
         lp.enterEmail("tlmhatre@gmail.com");
-        lp.enterPassword("Atul@1996aaa");
+        lp.enterPassword("Atul@1996");
     }
 
     @Given("user enter invalid {string} and {string}")
@@ -41,7 +41,7 @@ public class LoginStepdef {
         boolean isPresent = titleofPage.contains("My Account");
         //Assert.assertTrue(isPresent);
         Assert.assertTrue(isPresent,
-                " Page title mismatch! Expected title to contain 'Account Login' but got: " + titleofPage);
+                " Page title mismatch! Expected title to contain 'My Account' but got: " + titleofPage);
     }
 
 
