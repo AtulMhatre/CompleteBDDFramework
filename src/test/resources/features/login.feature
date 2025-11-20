@@ -9,7 +9,7 @@ Feature: Verify login module
     When user click on login button
     Then User Should be on registarion page
 
-
+  @Sanity
   Scenario Outline: Verify invalid username and password
     Given user enter invalid "<Username>" and "<Password>"
     When user click on login button
